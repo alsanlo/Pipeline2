@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'ls -la'
+        sh 'help'
         echo 'Esto es un mensaje'
       }
     }
@@ -60,7 +60,7 @@ pipeline {
             build 'BuildSample'
             catchError() {
               sh '''time
-echo "Es la hora de la diversión"'''
+echo "Es la hora de la diversiÃ³n"'''
             }
 
           }
@@ -76,7 +76,7 @@ echo "Es la hora de la diversión"'''
     }
     stage('Staging') {
       steps {
-        emailext(subject: 'Envío de correo', body: 'Este es un envio de correo de prueba lanzado desde el plugin de Jenkins BlueOcean. Alguien me oye¿', to: 'alsanchez@inlogiq.com')
+        emailext(subject: 'EnvÃ­o de correo', body: 'Este es un envio de correo de prueba lanzado desde el plugin de Jenkins BlueOcean. Alguien me oyeÂ¿', to: 'alsanchez@inlogiq.com')
       }
     }
     stage('Production') {
