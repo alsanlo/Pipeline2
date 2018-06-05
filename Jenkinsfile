@@ -57,11 +57,6 @@ pipeline {
         stage('Chrome') {
           steps {
             build 'BuildSample'
-            catchError() {
-              sh '''time
-echo "Es la hora de la diversión"'''
-            }
-
           }
         }
       }
