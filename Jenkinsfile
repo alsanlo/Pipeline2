@@ -70,7 +70,6 @@ echo "Es la hora de la diversión"'''
       steps {
         isUnix()
         pwd(tmp: true)
-        input(message: 'Que te ha parecido?', id: '1,2,3', ok: '1,2,3')
       }
     }
     stage('Staging') {
@@ -80,7 +79,6 @@ echo "Es la hora de la diversión"'''
     }
     stage('Production') {
       steps {
-        input(message: 'Introduzca un numero', ok: '1', id: '1')
         sleep 15
       }
     }
