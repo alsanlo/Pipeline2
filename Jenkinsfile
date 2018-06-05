@@ -23,7 +23,7 @@ pipeline {
         stage('JUnit') {
           steps {
             sleep 5
-            bat 'mkdir hola'
+            bat 'mkdir adios'
           }
         }
         stage('Jasmine') {
