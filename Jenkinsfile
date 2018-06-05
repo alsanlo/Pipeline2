@@ -79,7 +79,7 @@ echo "Es la hora de la diversión"'''
     }
     stage('Production') {
       steps {
-        mail(subject: 'Segundo Email', body: 'Este es el segundo email enviado desde Jenkins BlueOcean', to: 'alsanchez@inlogiq.com')
+        warnings(canComputeNew: true, canResolveRelativePaths: true, canRunOnFailed: true)
       }
     }
   }
