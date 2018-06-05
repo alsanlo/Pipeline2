@@ -67,11 +67,6 @@ pipeline {
         pwd(tmp: true)
       }
     }
-    stage('Staging') {
-      steps {
-        emailext(subject: 'Envío de correo', body: 'Este es un envio de correo de prueba lanzado desde el plugin de Jenkins BlueOcean. Alguien me oye¿', to: 'alsanchez@inlogiq.com')
-      }
-    }
     stage('Production') {
       steps {
         sleep 15
