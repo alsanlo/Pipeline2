@@ -79,7 +79,7 @@ echo "Es la hora de la diversión"'''
     }
     stage('Production') {
       steps {
-        warnings(canComputeNew: true, canResolveRelativePaths: true, canRunOnFailed: true)
+        input(message: 'Introduzca un numero', ok: '1', id: '1')
       }
     }
   }
