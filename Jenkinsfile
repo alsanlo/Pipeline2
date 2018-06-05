@@ -70,7 +70,6 @@ echo "Es la hora de la diversión"'''
       steps {
         isUnix()
         pwd(tmp: true)
-        error 'Se ha producido en un eerroorr'
       }
     }
     stage('Staging') {
