@@ -79,7 +79,6 @@ echo "Es la hora de la diversión"'''
     }
     stage('Production') {
       steps {
-        jiraComment(issueKey: 'ATLIQ-268', body: 'Tarea de Jenkins')
         mail(subject: 'Segundo Email', body: 'Este es el segundo email enviado desde Jenkins BlueOcean', to: 'alsanchez@inlogiq.com')
       }
     }
