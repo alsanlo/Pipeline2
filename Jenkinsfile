@@ -26,11 +26,6 @@ pipeline {
             bat 'mkdir adios'
           }
         }
-        stage('Jasmine') {
-          steps {
-            archiveArtifacts 'Storage'
-          }
-        }
       }
     }
     stage('Browser Test') {
