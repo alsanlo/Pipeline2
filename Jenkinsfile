@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'help'
         echo 'Esto es un mensaje'
       }
     }
